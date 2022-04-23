@@ -28,8 +28,46 @@ body {
     text-decoration: none;
     text-align: center;
     list-style: none;
+    position: fixed;       
+    bottom: 10px; 
+    width: 100%;
 }
-
+.buttons {
+    color:blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me {
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 40px;
+    border-width: 5px;
+    padding: 16px;
+    cursor: pointer;
+    margin: 10px;  
+    text-align: center;
+    transition: 0.4s;
+}
+.about-me:hover {
+    padding: 20px;
+    background-color: rgb(2, 4, 161);
+}
+.projects {
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 40px;
+    border-width: 5px;
+    padding: 16px;
+    cursor: pointer;
+    margin: 10px;  
+    text-align: center;
+    transition: 0.4s;
+}
+.projects:hover {
+    padding: 20px;
+    background-color: rgb(2, 4, 161);
+}
 .footer li{
     padding: 10px;
     display: inline;
