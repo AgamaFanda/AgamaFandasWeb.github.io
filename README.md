@@ -1,5 +1,5 @@
 # My own website
 
-agamafanda.ml
+https://agamafanda.ml
 
 this is source code of the web
