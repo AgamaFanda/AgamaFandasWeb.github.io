@@ -138,16 +138,22 @@ body {
     font-size: 20px;
     color: #ffffff;
 }
-.container {
+
+.projects {
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 1rem;
 }
-.card{
+.pl {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     position: relative;
-    width: 14rem;
-    height: 17rem;
+    width: 11rem;
+    height: 9rem;
     background: #262a34;
     border-radius: 30px;
     margin: 1.5rem;
@@ -155,90 +161,31 @@ body {
     opacity: 1;
     z-index: 990;
     box-shadow: 0px 0px 15px #00000030;
-    transition: all ease 0.3s;
+    transition: all ease 0.5s;
 }
-
-.card:hover{
-    transition: all ease 0.3s;
-    box-shadow: 0px 0px 15px #00000092;
-    width: 14rem;
-    height: 17rem;
-    border-radius: 35px;
-}
-
-.card:hover > .card__header > .card-image{
-    width: 6.3rem;
-    backdrop-filter: blur(0px);
-    box-shadow: 0px 0px 20px #00000032;
-    padding: 0px 0px;
-    height: 6.3rem;
-}
-
-.card:hover > .card__header{
-    height: 7rem;
-    transition: all ease 0.3s;
-}
-
-.card:hover > .card__body > .card-name{
-    font-size: 1.3rem;
-    transition: all ease 0.3s;
-}
-
-.card:hover > .card__body > .card-text{
-    font-size: 1.08rem;
-    transition: all ease 0.3s;
-}
-
-.card:hover > .card__body > .card-btn{
-    padding: 0.5rem 1.2rem;
-    font-size: 1.08rem;
-    transition: all ease 0.3s;
-}
-
-.card__header{
-    height: 7rem;
-    background-size: 10rem;
-    display: flex;
-    background-color: #262a34;
-    padding: 6px;
-    justify-content: center;
-    position: relative;
-    z-index: 997;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    transition: all ease 0.3s;
-}
-
-.card-image{
+.pl-image {
     position: absolute;
-    width: 6em;
     height: 6rem;
-    border: 0px solid #000000;
-    box-shadow: 0px 0px 20px #00000018;
-    border-radius: 25px;
-    z-index: 999;
-    bottom: 0.1rem;
-    transition: all ease 0.3s;
+    width: 6rem;
+    top: 1rem;
+    border-radius: 1rem;
 }
-
-.card__body{
-    padding: -1rem 1.5rem 0rem 1.5rem;
-    text-align: center;
+.pl-nadpis {
+    position: absolute;
+    top: 6rem;
 }
-
-.card-name{
-    padding-top: 0rem;
-    padding-bottom: 0.01rem;
-    transition: all ease 0.3s;
+.pl-info {
+    opacity: 0;
+    position: absolute;
+    right: 1rem;
+    left: 1rem;
+    top: 0rem;
+    transition: all ease-in-out 0.2s;
 }
-
-.card-text{
-    padding-bottom: 0.1rem;
-    transition: all ease 0.3s;
-}
-
-.card-btn{
+.pl-button {
+    opacity: 0;
     border: none;
+    position: absolute;
     padding: 0.7rem 0.7rem;
     font-size: 1rem;
     text-transform: uppercase;
@@ -247,14 +194,24 @@ body {
     background: #1c2027;
     border: 1px solid #232933;
     border-radius: 50px;
-    transition: all ease 0.3s;
+    transition: all ease 0.2s;
     text-decoration: none;
-    z-index: 999;
+    bottom: 1rem;
 }
-
-.card-btn:hover {
-    cursor: pointer;
-    box-shadow: 0px 0px 5px #0000009d;
-    background:rgba(0, 0, 148, 0.352);
-    transition: all ease 0.3s; 
+.pl:hover {
+    width: 19rem;
+    height: 19rem;
+    box-shadow: 0px 0px 15px #00000092;
+}
+.pl:hover > .pl-info {
+    top: 9rem;
+    opacity: 1;
+}
+.pl:hover > .pl-button {
+    opacity: 1;
+}
+.pl-button:hover {
+    border-radius: 4rem;
+    box-shadow: 0px 0px 15px #00000092;
+    background-color: #410c0c;
 }
