@@ -14,7 +14,7 @@ body {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 5px rgb(185, 184, 184); 
     border-radius: 10px;
   }
    
@@ -26,7 +26,7 @@ body {
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #1d1d1d;  
+    background: #9f9e9e;  
   }
 .navbar {
     overflow: hidden;
@@ -49,19 +49,36 @@ body {
     padding: 14px 16px;
     text-decoration: none;
   }
+  .background-image-for-main-page {
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      height: 20rem;
+      width: 100%;
+      z-index: 1;
+  }
 .nadpis {
+    z-index: 800;
     color:whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    font-size: 2rem;
+    animation-name: nadpisAnimated;
+    animation-duration: 1s;
 }
 .podnadpis {
+    z-index: 800;
     color:#00e0fe;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@keyframes nadpisAnimated {
+    0% {font-size: 1rem;}
+    100% {font-size: 2rem;}
 }
 .about {
     background-color: gray;

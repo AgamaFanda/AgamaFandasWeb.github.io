@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>animation test</title>
+        <style>
+            h1 {
+                color: lightgreen;
+                text-align: center;
+            }
+            section.wel {
+                position: relative;
+                animation-name: welcome;
+                animation-duration: 4s;
+                left:-100px; top:40px;
+            }
+            @keyframes welcome {
+                0% {left:0px; top:-200px;}
+                40% {left:0px; top:60px;}
+                70% {left:0px; top:40px;}
+                100% {left:-100px; top:40px;}
+            }
+            section.mem {
+                position: relative;
+                animation-name: member;
+                animation-duration: 4s;
+                left:0px; top:-7px;
+            }
+            @keyframes member {
+                0% {left:0px; top:-200px;}
+                40% {left:0px; top:60px;}
+                85% {left:0px; top:40px;}
+                100% {left:0px; top:-6px;}
+            }
+            section.to {
+                position: relative;
+                animation-name: to;
+                animation-duration: 4s;
+                left:63px; top:-55px;
+            }
+            @keyframes to {
+                0% {left:0px; top:-200px;}
+                40% {left:0px; top:60px;}
+                60% {left:0px; top:40px;}
+                70% {left:100px; top:40px;}
+                85% {left:100px; top:-55px;}
+                100% {left:63px; top:-55px;}
+            }
+            section.web {
+                position: relative;
+                animation-name: website;
+                animation-duration: 5s;
+                left:-27px; top:-70px;
+            }
+            @keyframes website {
+                0% {left:0px; top:-200px;}
+                35% {left:0px; top:60px;}
+                60% {left:0px; top:40px;}
+                100% {left:-27px; top:-70px;}
+            }
+            h3 {
+                position: relative;
+                animation-name: text;
+                animation-duration: 5s;
+                color: mediumvioletred;
+                text-align: center;
+                margin: -50px;
+            }
+            @keyframes text {
+                0% {color: black; text-indent: -99999px;}
+                90% {color: black; text-indent: 0px;}
+                100% {color: mediumvioletred;}
+            }
+            h4 {
+                position: fixed;
+                animation-name: test;
+                animation-duration: 8s;
+                color: mediumvioletred;
+                padding: 100px;
+                background-repeat: no-repeat;
+                background-color: darkorange;
+            }
+            @keyframes test {
+                0% {background-color: black;}
+                70% {background-color: black;}
+                80% {background-color: darkorange;}
+            }
+            body {
+                background-color: black;
+            }
+        </style>
+        <script type="text/javascript">
+            function load(){
+            setTimeout("window.open(self.location, '_self');", 7000);
+            }
+            </script>
+            <body onload="load()">
+    </head>
+    <body>
+        <section class="wel">
+            <h1>welcome</h1>
+        </section>
+        <section class="mem">
+            <h1>member</h1>
+        </section>
+        <section class="to">
+            <h1>to</h1>
+        </section>
+        <section class="web">
+            <h1>website</h1>
+        </section>
+        <h3>im just trying to make some animation, ok?</h3>
+        <h4>test</h4>
+    </body>
+</html>
