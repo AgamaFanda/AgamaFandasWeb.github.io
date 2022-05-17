@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: linear-gradient(700deg, #100f0f, #232323);
+    background-image: linear-gradient(700deg, #100f0f, #303030);
     text-align: center;
 }
 ::-webkit-scrollbar {
@@ -196,4 +196,73 @@ body {
     border-radius: 4rem;
     box-shadow: 0px 0px 15px #00000092;
     background-color: #410c0c;
+}
+
+/* contacts */
+
+.con-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1rem;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.con {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 11rem;
+    height: 13rem;
+    background: #262a34;
+    border-radius: 30px;
+    margin: 1.5rem;
+    padding-bottom: 1rem;
+    opacity: 1;
+    z-index: 990;
+    box-shadow: 0px 0px 15px #00000030;
+    transition: all ease 0.5s;
+}
+.con-image {
+    position: absolute;
+    top: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #00000092;
+}
+.con-title {
+    position: absolute;
+    bottom: 3.5rem;
+}
+.con-button {
+    border: none;
+    position: absolute;
+    padding: 0.7rem 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ebebeb;
+    background: #1c2027;
+    border: 1px solid #232933;
+    border-radius: 50px;
+    transition: all ease 0.2s;
+    text-decoration: none;
+    width: 8rem;
+    bottom: 1rem;
+}
+
+.con-button:hover {
+    background: #323945;
+    box-shadow: 0px 0px 15px #00000092;
+}
+.con:hover {
+    width: 11.4rem;
+    height: 13.4rem;
+    box-shadow: 0px 0px 15px #00000092;
 }
