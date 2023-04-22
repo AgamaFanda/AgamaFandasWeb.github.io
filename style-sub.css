@@ -139,7 +139,7 @@ body {
     flex-direction: column;
     position: relative;
     width: 12rem;
-    height: 12rem;
+    height: 9rem;
     background: #262a34;
     border-radius: 30px;
     margin: 1.5rem;
@@ -166,7 +166,7 @@ body {
     right: 1rem;
     left: 1rem;
     top: 0rem;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-out 0.4s;
 }
 .pl-button {
     opacity: 0;
@@ -185,8 +185,8 @@ body {
     bottom: 1rem;
 }
 .pl:hover {
-    width: 19rem;
-    height: 19rem;
+    width: 20rem;
+    height: 20rem;
     box-shadow: 0px 0px 15px #00000092;
     margin: 1rem;
 }

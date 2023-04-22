@@ -71,7 +71,7 @@ body {
 }
 .podnadpis {
     z-index: 800;
-    color:#00e0fe;
+    color:#797979;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ body {
     100% {font-size: 2rem;}
 }
 .about {
-    background-color: gray;
+    background-color: rgb(65, 64, 64);
     display: flex;
     justify-content: center;
     align-items: center;
